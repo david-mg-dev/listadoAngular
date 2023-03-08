@@ -1,0 +1,15 @@
+<mat-card class="card-login">
+    <form [formGroup]= "loginForm" (ngSubmit)="login()">
+        <mat-form-field>
+            <mat-label>Usuario</mat-label>
+            <input matInput placeholder="Usuario" FormControlName="user">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Contraseña</mat-label>
+            <input matInput placeholder="Password" FormControlName="pass">
+        </mat-form-field>
+
+        <button type="submit" mat-raised-button>Login</button>
+    </form>
+    <button (click)="logout()">Logout</button>
+</mat-card>     
